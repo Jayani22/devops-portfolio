@@ -53,6 +53,7 @@ section {
   max-width: 900px;
   margin: 40px auto;
   padding: 0 20px;
+  scroll-margin-top: 70px;
 }
 
 h2 {
@@ -73,6 +74,14 @@ h2 {
 
 .card:hover {
   transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.3em;
+}
+.card i {
+  margin-right: 8px;
+  color: #0ea5e9;
 }
 
 /* Skills */
@@ -197,6 +206,7 @@ html {
 </nav>
 <header>
   <h1>Mutcherla Jayani</h1>
+  <p>DevOps Engineer focused on automation, cloud infrastructure, and scalable deployments</p>
   <p><span id="typing"></span></p>
 
   <div class="icons">
@@ -219,16 +229,13 @@ html {
 <section id="skills">
   <h2>Skills</h2>
   <div class="skills">
-    <span>Linux</span>
-    <span>AWS</span>
-    <span>Shell Scripting</span>
-    <span>Ansible</span>
-    <span>Terraform</span>
-    <span>Docker</span>
-    <span>CI/CD</span>
-    <span>GitHub Actions</span>
-    <span>Prometheus</span>
-    <span>Grafana</span>
+    <span>OS: Linux</span>
+    <span>Cloud: AWS</span>
+    <span>Automation: Shell Scripting, Ansible</span>
+    <span>IaC: Terraform</span>
+    <span>Containers: Docker</span>
+    <span>CI/CD: GitHub Actions</span>
+    <span>Monitoring: Prometheus, Grafana </span>
   </div>
 </section>
 
@@ -258,8 +265,10 @@ html {
   <div class="card">
     <h3>Strapi Deployment using ECS, Terraform & CI/CD</h3>
     <p>
+      <p>
       Designed and deployed a Strapi application using AWS ECS with Terraform. 
-      Implemented a CI/CD pipeline to automate build and deployment.
+      Implemented a CI/CD pipeline to automate build and deployment, reducing manual effort and ensuring faster, reliable releases.
+      </p>
     </p>
     <p class="tools">Tools: AWS ECS, Terraform, Docker, GitHub Actions</p>
     <a href="https://github.com/Jayani22/strapi-ecs-terraform-cicd" target="_blank">View Project →</a>
@@ -268,7 +277,10 @@ html {
   <div class="card">
     <h3>Blue-Green Deployment on AWS ECS</h3>
     <p>
-      Implemented blue-green deployment strategy to achieve zero-downtime releases.
+      <p>
+      Implemented blue-green deployment strategy on AWS ECS to achieve zero-downtime releases. 
+      Enabled safe rollbacks and improved deployment reliability.
+      </p>
     </p>
     <p class="tools">Tools: AWS ECS, Terraform, Docker</p>
     <a href="https://github.com/Jayani22/strapi-bluegreen.git" target="_blank">View Project →</a>
@@ -277,7 +289,10 @@ html {
   <div class="card">
     <h3>Infrastructure Monitoring with Prometheus & Grafana</h3>
     <p>
-      Built monitoring system with dashboards and alerts for system performance.
+      <p>
+      Built monitoring system using Prometheus and Grafana to track CPU, memory, and system performance. 
+      Configured dashboards and alerts to detect issues early and improve system reliability.
+      </p>
     </p>
     <p class="tools">Tools: Prometheus, Grafana, Node Exporter</p>
     <a href="https://github.com/Jayani22/devops-infra-monitoring.git" target="_blank">View Project →</a>
