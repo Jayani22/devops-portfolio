@@ -175,9 +175,51 @@ html {
     margin: 4px;
   }
 }
+    #typing::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
   </style>
 </head>
+<script>
+const texts = [
+  "DevOps Engineer",
+  "AWS | Docker | CI/CD",
+  "Building Scalable Systems",
+  "Automation & Cloud Enthusiast"
+];
 
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type() {
+  if (count === texts.length) {
+    count = 0;
+  }
+
+  currentText = texts[count];
+  letter = currentText.slice(0, ++index);
+
+  document.getElementById("typing").textContent = letter;
+
+  if (letter.length === currentText.length) {
+    setTimeout(() => {
+      index = 0;
+      count++;
+      type();
+    }, 1500);
+  } else {
+    setTimeout(type, 60);
+  }
+})();
+</script>
 <body>
 <nav>
   <a href="#about">About</a>
@@ -188,7 +230,7 @@ html {
 </nav>
 <header>
   <h1>Mutcherla Jayani</h1>
-  <p>DevOps Engineer | AWS | Docker | CI/CD</p>
+  <p><span id="typing"></span></p>
 
   <div class="icons">
     <a href="https://github.com/Jayani22" target="_blank"><i class="fab fa-github"></i></a>
