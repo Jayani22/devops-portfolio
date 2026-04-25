@@ -65,18 +65,21 @@
 
 /* Resume button */
 .resume-btn {
-  padding: 8px 18px;
+  padding: 10px 22px;
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  color: white;
-  border-radius: 20px;
+  color: #ffffff;
+  border-radius: 25px;
   font-weight: 600;
   font-size: 0.9em;
   transition: all 0.3s ease;
+  display: inline-block;
+  opacity: 1;
 }
 
 .resume-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  color: #ffffff;
 }
 
 /* Icons */
@@ -452,6 +455,7 @@ body.dark h3 {
 
 body.dark .resume-btn {
   background: linear-gradient(135deg, #2dd4bf, #14b8a6);
+  color: #042f2e;
 }
 
 .hero {
