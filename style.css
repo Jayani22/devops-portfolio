@@ -153,11 +153,6 @@ h2 {
   transition: all 0.25s ease;
   border: 1px solid transparent;
 }
-
-.skills span:hover {
-  background: #99f6e4;
-}
-
 /* Links */
 a {
   color: var(--primary-dark);
