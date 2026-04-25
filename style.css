@@ -75,6 +75,9 @@
   display: inline-block;
   text-decoration: none;
   border: none;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
 }
 
 a.resume-btn {
@@ -444,7 +447,7 @@ body.dark footer {
   border-top: 1px solid #1e293b;
 }
 
-body.dark a {
+body.dark a:not(.resume-btn) {
   color: #2dd4bf;
 }
 
@@ -460,7 +463,7 @@ body.dark h3 {
 
 body.dark .resume-btn {
   background: linear-gradient(135deg, #2dd4bf, #14b8a6);
-  color: #042f2e;
+  color: #ffffff;
 }
 
 .hero {
